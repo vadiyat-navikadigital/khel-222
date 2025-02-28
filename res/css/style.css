@@ -84,7 +84,7 @@
 @media only screen and (max-width: 650px) {
 
     .container {
-        min-height: 100vh;
+        min-height: 95vh;
     }
 
     .win-big {
@@ -101,8 +101,10 @@
 
     .main {
         background-image: url('../images/android-2.png') !important;
-        background-position: center center !important;
-        background-size: cover !important;
+        background-repeat: no-repeat;
+        /* background-position: center center !important; */
+        /* background-size: cover !important; */
+        background-size: 100% 95%;
     }
 
     .strip {
@@ -116,7 +118,7 @@
 
     .fixed-div {
         position: fixed;
-        bottom: 15px;
+        bottom: 25px;
     }
 
     .bonus-box img {
