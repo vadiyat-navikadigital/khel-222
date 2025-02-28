@@ -170,3 +170,54 @@
     /* Bottom-right shadow */
 
 }
+
+/* otp box css starts */
+
+.otp-box {
+    background: #222222;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.otp-input {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border: 2px solid #ff0099;
+    background: transparent;
+    color: white;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.gradient-btn {
+    background: linear-gradient(to right, #007bff, #ff0099);
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.timer {
+    color: #00ff66;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sign-in-link {
+    color: #ff0099;
+    text-decoration: none;
+}
+
+.sign-in-link:hover {
+    text-decoration: underline;
+}
+
+/* otp box css ends */

@@ -42,18 +42,20 @@
                 <div class="col-md-6" style="display:flex; justify-content:center; align-items:center;">
                     <div class="login-box" style="padding: 50px 50px;">
                         <h3 class="text-center" style="font-weight: 700; padding-top:20px">Phone Verification</h3>
-                        <p class="text-center text-muted another-para">We need to register your phone number before
-                            getting started!
+                        <p class="text-center text-muted another-para" style="color: white !important;">Let's get you
+                            all set up!
                         </p>
 
                         <div class="mb-3">
-                            <div class="input-group">
-                                <select class="form-select" style="max-width: 80px;">
+                            <div class="input-group" style="background-color: black;">
+                                <select class="form-select" id="countryCode"
+                                    style="max-width: 80px; border-radius:5px; height:40px; background-color: black; color: white; border: 1px solid rgba(255, 255, 255, 0.3);">
                                     <option selected>IND</option>
                                     <option>USA</option>
                                     <option>UK</option>
                                 </select>
-                                <input type="text" class="form-control" placeholder="+91">
+                                <input type="text" id="phoneNumber" class="form-control" placeholder="+91"
+                                    style="margin-left:10px; border-radius:5px; height:40px; background-color: black; color:white; border: 1px solid rgba(255, 255, 255, 0.3);">
                             </div>
                         </div>
 
@@ -73,6 +75,63 @@
         </div>
     </div>
 
+    <!-- popup code starts here -->
+
+    <!-- The Modal -->
+    <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
+        <div class="modal-dialog" style="position: absolute; top:46%; left:48%; transform: translate(-50%, -50%);">
+            <!-- <div class="modal-content"> -->
+            <!-- <div class="modal-header"> -->
+            <!-- <h5 class="modal-title" id="signInModalLabel">Sign In</h5> -->
+            <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+            <!-- </div> -->
+            <!-- <div class="modal-body"> -->
+            <div class="otp-box">
+                <div class="" style="display:flex; justify-content:flex-end; "><button type="button" class="btn-close"
+                        style="background-color: white; border-radius:25px;" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <h4 class="text-white">OTP Verification</h4>
+                <p class="text-white" style="font-size: 12px;">We have sent an OTP on given number +91 <br>
+                    <strong>8877655443</strong>
+                </p>
+                <div class="timer">03:00</div>
+
+                <div class="d-flex justify-content-center mt-3">
+                    <input type="text" maxlength="1" class="otp-input">
+                    <input type="text" maxlength="1" class="otp-input">
+                    <input type="text" maxlength="1" class="otp-input">
+                    <input type="text" maxlength="1" class="otp-input">
+                    <input type="text" maxlength="1" class="otp-input">
+                    <input type="text" maxlength="1" class="otp-input">
+                </div>
+
+                <button class="gradient-btn mt-3" style="margin: 20px 0 20px 0 !important;">Verify & Login</button>
+
+                <p class="mt-3 text-white">Already have an account? <a href="#" class="sign-in-link">Sign In</a>
+                </p>
+            </div>
+            <!-- </div> -->
+            <!-- </div> -->
+        </div>
+    </div>
+
+    <!-- popup code ends here -->
+
+    <!-- opt scritp starts here -->
+
+    <script>
+        const inputs = document.querySelectorAll(".otp-input");
+        inputs.forEach((input, index) => {
+            input.addEventListener("input", (e) => {
+                if (e.target.value && index < inputs.length - 1) {
+                    inputs[index + 1].focus();
+                }
+            });
+        });
+    </script>
+
+    <!-- opt scritp ends here -->
+    <script src="./res/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
