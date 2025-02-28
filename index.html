@@ -7,6 +7,7 @@
     <title>Win Big 3</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./airstrike/airstrike.ttf">
     <link rel="stylesheet" href="./res/css/style.css">
     <style>
         .main {
@@ -28,7 +29,9 @@
                 <div class="col-md-6 d-flex align-items-center justify-content-center text-center" id="move-top">
                     <div>
                         <div class="bonus-box">
-                            <h1 class="win-big">KHEL 222</h1>
+                            <h1 class="win-big">
+                                <p style="letter-spacing: 5px;">KHEL222</p>
+                            </h1>
                             <h3 style="font-weight: 700;" class="main-para border-text">Bet, and win big with Aviator!
                             </h3>
                             <img src="./res/images/img500.png" class="img-fluid"
@@ -42,24 +45,25 @@
                 <div class="col-md-6" style="display:flex; justify-content:center; align-items:center;">
                     <div class="login-box" style="padding: 50px 50px;">
                         <h3 class="text-center" style="font-weight: 700; padding-top:20px">Phone Verification</h3>
-                        <p class="text-center text-muted another-para" style="color: white !important;">Let's get you
-                            all set up!
+                        <p class="text-center text-muted another-para" style="color: #000 !important; ">
+                            Let's get you all set up!
                         </p>
 
                         <div class="mb-3">
-                            <div class="input-group" style="background-color: black;">
+                            <div class="input-group">
                                 <select class="form-select" id="countryCode"
-                                    style="max-width: 80px; border-radius:5px; height:40px; background-color: black; color: white; border: 1px solid rgba(255, 255, 255, 0.3);">
+                                    style=" border-radius: 5px; height:40px;  background-color: #fff;  border: 1px solid #939393; box-shadow: 1px 0px 2px 2px rgb(232, 208, 208) ">
                                     <option selected>IND</option>
                                     <option>USA</option>
                                     <option>UK</option>
                                 </select>
                                 <input type="text" id="phoneNumber" class="form-control" placeholder="+91"
-                                    style="margin-left:10px; border-radius:5px; height:40px; background-color: black; color:white; border: 1px solid rgba(255, 255, 255, 0.3);">
+                                    style="margin-left:10px; border-radius:5px; height:40px; width: 150px; background-color: #fff;  border: 1px solid #939393;  box-shadow: 1px 0px 2px 2px rgb(232, 208, 208) ">
                             </div>
                         </div>
 
-                        <button class="btn btn-primary w-100" style="margin: 20px 0 20px 0; padding:5px; font-size:14px"
+                        <button class="btn w-100"
+                            style="margin: 20px 0 20px 0; padding:5px; font-size:14px; background-color: #FFD735;"
                             id="request-otp">Request
                             OTP</button>
 
@@ -78,7 +82,7 @@
     <!-- popup code starts here -->
 
     <!-- The Modal -->
-    <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
+    <div class="modal  fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
         <div class="modal-dialog" style="position: absolute; top:46%; left:48%; transform: translate(-50%, -50%);">
             <!-- <div class="modal-content"> -->
             <!-- <div class="modal-header"> -->
@@ -90,8 +94,8 @@
                 <div class="" style="display:flex; justify-content:flex-end; "><button type="button" class="btn-close"
                         style="background-color: white; border-radius:25px;" data-bs-dismiss="modal"
                         aria-label="Close"></button></div>
-                <h4 class="text-white">OTP Verification</h4>
-                <p class="text-white" style="font-size: 12px;">We have sent an OTP on given number +91 <br>
+                <h4 style="color: #000;">OTP Verification</h4>
+                <p style="font-size: 12px; color: #000;">We have sent an OTP on given number +91 <br>
                     <strong>8877655443</strong>
                 </p>
                 <div class="timer">03:00</div>
@@ -105,9 +109,11 @@
                     <input type="text" maxlength="1" class="otp-input">
                 </div>
 
-                <button class="gradient-btn mt-3" style="margin: 20px 0 20px 0 !important;">Verify & Login</button>
+                <button class="gradient-btn btn  mt-3"
+                    style="margin: 20px 0 20px 0 !important; background-color: #FFD735;">Verify & Login</button>
 
-                <p class="mt-3 text-white">Already have an account? <a href="#" class="sign-in-link">Sign In</a>
+                <p class="mt-3 " style=" color: #000;">Already have an account? <a href="#" class="sign-in-link">Sign
+                        In</a>
                 </p>
             </div>
             <!-- </div> -->

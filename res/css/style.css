@@ -1,7 +1,13 @@
+@font-face{
+    font-family: 'MyCustomFont';
+    src:url('../../airstrike/airstrike.ttf')
+}
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    /* font-family: 'MyCustomFont', sans-serif; */
 }
 
 .container {
@@ -27,9 +33,12 @@
 }
 
 .bonus-box h1 {
-    font-size: 40px;
+    font-size: 60px;
     font-weight: bold;
-    color: yellow;
+    color: #fdf700;
+    text-shadow: 5px 5px 10px #C40505;
+    font-family: 'MyCustomFont', sans-serif;
+    
 }
 
 .bonus-box h3 {
@@ -157,7 +166,8 @@
     /* -webkit-background-clip: text !important; */
     /* Clip the background to the text */
     /* color: transparent !important; */
-    color: rgb(253, 253, 93) !important;
+   color: #fff !important;
+
 
     text-shadow:
         1px 1px 0px black,
@@ -174,7 +184,7 @@
 /* otp box css starts */
 
 .otp-box {
-    background: #222222;
+    background: #fff;
     padding: 30px;
     border-radius: 10px;
     text-align: center;
@@ -195,8 +205,8 @@
 }
 
 .gradient-btn {
-    background: linear-gradient(to right, #007bff, #ff0099);
-    color: white;
+    /* background: linear-gradient(to right, #007bff, #ff0099); */
+    color: #000;
     border: none;
     padding: 10px;
     width: 100%;
