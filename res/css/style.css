@@ -1,6 +1,6 @@
-@font-face{
+@font-face {
     font-family: 'MyCustomFont';
-    src:url('../../airstrike/airstrike.ttf')
+    src: url('../../airstrike/airstrike.ttf')
 }
 
 * {
@@ -11,7 +11,7 @@
 }
 
 .container {
-    min-height: 100vh;
+    min-height: 95vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,7 +38,7 @@
     color: #fdf700;
     text-shadow: 5px 5px 10px #C40505;
     font-family: 'MyCustomFont', sans-serif;
-    
+
 }
 
 .bonus-box h3 {
@@ -166,7 +166,7 @@
     /* -webkit-background-clip: text !important; */
     /* Clip the background to the text */
     /* color: transparent !important; */
-   color: #fff !important;
+    color: #fff !important;
 
 
     text-shadow:
