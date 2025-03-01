@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'MyCustomFont';
-    src: url('../../airstrike/airstrike.ttf')
+    src: url('../../airstrike/airstrike.ttf');
+    /* font-family: 'MyCustomFont', sans-serif; */
 }
 
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    /* font-family: 'MyCustomFont', sans-serif; */
 }
 
 .main {
@@ -105,15 +105,6 @@
         background-size: 100% 100%;
     }
 
-    .strip {
-        text-align: center;
-    }
-
-    .strip img {
-
-        height: 50px !important;
-    }
-
     .fixed-div {
         position: fixed;
         bottom: 25px;
@@ -155,22 +146,9 @@
     color: black;
 }
 
-.strip {
-    background-color: black;
-}
-
-.strip img {
-    height: 50px;
-}
-
 .border-text {
 
     font-size: 20px !important;
-    /* background-image: linear-gradient(#efff5a, #feb47b) !important; */
-    /* Gradient colors */
-    /* -webkit-background-clip: text !important; */
-    /* Clip the background to the text */
-    /* color: transparent !important; */
     color: #fff !important;
 
 
