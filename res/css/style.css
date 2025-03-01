@@ -11,6 +11,7 @@
 }
 
 .main {
+    background-attachment: fixed !important;
     height: calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom));
     /* below display flex and other attributes are added to make everything vertically and horizontally center */
     display: flex;
