@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'MyCustomFont';
-    src: url('../../airstrike/airstrike.ttf');
+    src: url('../font/airstrike/airstrike.ttf');
     /* font-family: 'MyCustomFont', sans-serif; */
 }
 
